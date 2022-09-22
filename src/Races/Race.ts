@@ -6,6 +6,10 @@ class Race {
     this._name = name;
     this._dexterity = dexterity;
   }
+
+  static createdRacesInstances() {
+    throw new Error('Not implemented');
+  }
 }
 
 export default Race;
