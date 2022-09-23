@@ -1,6 +1,6 @@
 import Race from './Race';
 
-class Orc extends Race {
+abstract class Orc extends Race {
   maxlifePoints: number;
   static intances = 0;
 
