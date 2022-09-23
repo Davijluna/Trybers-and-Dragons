@@ -1,4 +1,4 @@
-export default abstract class Race {
+abstract class Race {
   private _name: string; 
   private _dexterity: number;
 
@@ -17,3 +17,5 @@ export default abstract class Race {
 
   abstract get maxLifePoints(): number;
 }
+
+export default Race;
