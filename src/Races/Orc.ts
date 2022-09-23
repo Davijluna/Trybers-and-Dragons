@@ -1,13 +1,13 @@
 import Race from './Race';
 
-abstract class Orc extends Race {
-  maxlifePoints: number;
-  static intances = 0;
+export default class Orc extends Race {
+  maxLifePoints: number;
+  static instances = 0;
 
   constructor(name: string, dexterity: number) {
     super(name, dexterity);
-    this.maxlifePoints = 74;
-    Orc.intances += 1;
+    this.maxLifePoints = 74;
+    Orc.instances += 1;
   }
 
   get name(): string {
@@ -19,8 +19,6 @@ abstract class Orc extends Race {
   }
 
   static createdRacesInstances(): number {
-    return Orc.intances;
+    return Orc.instances;
   }
 }
-
-export default Orc;
